@@ -97,7 +97,7 @@ class UserController extends Controller
             //return the response
             return response()->json([
                 'user' => UserResource::make($request->user()),
-                'message' => 'Profile updated successfully'
+                'message' => 'Perfil actualizado exitosamente'
             ]);
         }
     }

@@ -7,12 +7,12 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Image</th>
-                            <th>Name</th>
-                            <th>Quantity</th>
-                            <th>Price</th>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
                             <th>Color</th>
-                            <th>Size</th>
+                            <th>Medidas</th>
                             <th>Subtotal</th>
                             <th></th>
                         </tr>
@@ -78,15 +78,15 @@
                     </div>
                 </div>
             </div>
-            <Alert v-else bgColor="info" content="Your cart is empty!" />
+            <Alert v-else bgColor="info" content="Tu carrito está vacío!" />
             <div class="d-flex justify-content-end my-3">
                 <router-link to="/"
                     class="btn btn-dark rounded-0 mx-2"
-                    >Continue Shopping</router-link>
+                    >Continuar comprando</router-link>
                 <router-link to="/checkout"
                     class="btn btn-danger rounded-0 mx-2"
                     v-if="cartStore.cartItems.length"
-                    >Checkout</router-link>
+                    >Proceso de pago</router-link>
             </div>
         </div>
     </div>

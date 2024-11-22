@@ -12,7 +12,7 @@
                 <div class="col-md-12">
                     <div class="card-header bg-white">
                         <h3 class="mt-2">
-                            Orders ({{ $orders->count() }})
+                            Ordenes ({{ $orders->count() }})
                         </h3>
                     </div>
                     <hr>
@@ -21,14 +21,14 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Product Name</th>
-                                    <th>Product Price</th>
-                                    <th>By</th>
-                                    <th>Coupon</th>
-                                    <th>Qty</th>
+                                    <th>Nombre del producto</th>
+                                    <th>Precio del producto</th>
+                                    <th>Por</th>
+                                    <th>Cupon</th>
+                                    <th>Cantidad</th>
                                     <th>Total</th>
-                                    <th>Order Date</th>
-                                    <th>Delivered at</th>
+                                    <th>Fecha del pedido</th>
+                                    <th>Entregado en</th>
                                     <th></th>
                                 </tr>
                             </thead>

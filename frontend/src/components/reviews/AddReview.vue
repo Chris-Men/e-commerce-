@@ -3,13 +3,13 @@
         <Spinner :store="productDetailsStore" />
         <div class="card-header bg-white">
             <h5 class="text-center mt-2">
-                Add your review
+                Añade tu reseña
             </h5>
         </div>
         <div class="card-body">
             <form @submit.prevent="addReview" class="mt-5 col-md-10 mx-auto">
                 <div class="mb-3">
-                    <label for="title" class="form-label">Title*</label>
+                    <label for="title" class="form-label">Titulo*</label>
                     <input
                         type="text"
                         class="form-control"
@@ -22,7 +22,7 @@
                     />
                 </div>
                 <div class="mb-3">
-                    <label for="body" class="form-label">Review*</label>
+                    <label for="body" class="form-label">Reseña*</label>
                     <textarea class="form-control" 
                         :required="true"
                         v-model="data.review.body"
@@ -40,7 +40,7 @@
                         class="btn btn-dark btn-sm"
                         :disabled="data.review.rating === 0"
                     >
-                        Submit
+                        Guardar
                     </button>
                 </div>
             </form>

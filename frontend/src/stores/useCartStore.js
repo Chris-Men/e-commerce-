@@ -21,12 +21,12 @@ export const useCartStore = defineStore('cart', {
             )
             //if the product exists
             if(index !== -1) {
-                toast.info("Product already in your cart", {
+                toast.info("Producto ya en tu carrito", {
                     timeout: 2000
                 })
             }else {
                 this.cartItems.push(item)
-                toast.success("Product added to your cart", {
+                toast.success("Producto añadido a tu carrito", {
                     timeout: 2000
                 })
             }
@@ -60,7 +60,7 @@ export const useCartStore = defineStore('cart', {
         },
         removeFromCart(item) {
             this.cartItems = this.cartItems.filter(product => product.ref !== item.ref)
-            toast.success("Product removed from your cart", {
+            toast.success("Producto eliminado de su carrito", {
                 timeout: 2000
             })
         },

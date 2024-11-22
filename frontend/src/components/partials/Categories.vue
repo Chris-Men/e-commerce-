@@ -1,6 +1,6 @@
 <template>
   <div class="mb-3">
-    <h6>Categories</h6>
+    <h6>Categorias</h6>
     <ul class="nav d-flex flex-column">
         <li class="nav-item mb-1" v-for="category in productsStore.categories"
           :key="category.id">

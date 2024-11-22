@@ -34,7 +34,7 @@
                 aria-current="page"
                 to="/register"
               >
-                <i class="bi bi-person-add"></i> Register
+                <i class="bi bi-person-add"></i> Registrarse
               </router-link>
             </li>
             <li class="nav-item">
@@ -43,7 +43,7 @@
                 aria-current="page"
                 to="/login"
               >
-                <i class="bi bi-box-arrow-right"></i> Login
+                <i class="bi bi-box-arrow-right"></i> Iniciar sesión
               </router-link>
             </li>
           </ul>
@@ -64,7 +64,7 @@
                 aria-current="page"
                 to="#"
               >
-                <i class="bi bi-box-arrow-left"></i> Logout
+                <i class="bi bi-box-arrow-left"></i> Salir
               </router-link>
             </li>
           </ul>
@@ -74,7 +74,7 @@
               aria-current="page"
               to="/cart"
             >
-              <i class="bi bi-cart-plus"></i> Cart ({{
+              <i class="bi bi-cart-plus"></i> Carrito ({{
                 cartStore.cartItems.length
               }})
             </router-link>
@@ -85,7 +85,7 @@
               aria-current="page"
               to="/favorites"
             >
-              <i class="bi bi-heart-fill"></i> Favorites ({{
+              <i class="bi bi-heart-fill"></i> Favoritos ({{
                 favoritesStore.favorites.length
               }})
             </router-link>

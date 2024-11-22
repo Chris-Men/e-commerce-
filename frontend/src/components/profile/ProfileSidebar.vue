@@ -15,7 +15,7 @@
                 >
                 <div class="input-group my-3">
                     <div class="mb-3">
-                        <label for="image" class="form-label">Choose file</label>
+                        <label for="image" class="form-label">Elegir archivo</label>
                         <input
                             type="file"
                             class="form-control"
@@ -30,7 +30,7 @@
                         type="submit"
                         class="btn btn-sm btn-dark"
                     >
-                        Submit
+                        Guardar
                     </button>
                 </div>
                 <ul class="list-group w-100 tet-center mt-2">
@@ -42,7 +42,7 @@
                     </li>
                     <li class="list-group-item">
                         <router-link to="/user/orders" class="text-decoration-none text-dark">
-                            <i class="bi bi-bag-check-fill"></i> Orders
+                            <i class="bi bi-bag-check-fill"></i> Ordenes
                         </router-link>
                     </li>
                 </ul>

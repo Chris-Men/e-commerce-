@@ -1,6 +1,6 @@
 <template>
   <div class="mb-3">
-    <h6>Colors</h6>
+    <h6>Colores</h6>
     <div class="d-flex flex-wrap justify-content-start">
         <div class="border border-light-subtle shadow-sm border-2 rounded mb-1 me-1" 
           v-for="color in productsStore.colors"

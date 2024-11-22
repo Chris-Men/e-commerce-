@@ -29,7 +29,7 @@ class ReviewController extends Controller
         ]);
 
         return redirect()->route('admin.reviews.index')->with([
-            'success' => 'Review has been updated successfully'
+            'success' => 'La reseña se ha actualizado correctamente.'
         ]);
     }
 
@@ -41,7 +41,7 @@ class ReviewController extends Controller
         $review->delete();
 
         return redirect()->route('admin.reviews.index')->with([
-            'success' => 'Review has been deleted successfully'
+            'success' => 'La reseña se ha eliminado correctamente.'
         ]);
     }
 }

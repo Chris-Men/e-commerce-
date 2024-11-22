@@ -12,7 +12,7 @@
                 <div class="col-md-12">
                     <div class="card-header bg-white">
                         <h3 class="mt-2">
-                            Users ({{ $users->count() }})
+                            Usuarios ({{ $users->count() }})
                         </h3>
                     </div>
                     <hr>
@@ -21,10 +21,10 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Name</th>
+                                    <th>Nombre</th>
                                     <th>Email</th>
-                                    <th>Profile Image</th>
-                                    <th>Registred</th>
+                                    <th>Imagen de perfil</th>
+                                    <th>Registrado</th>
                                     <th></th>
                                 </tr>
                             </thead>

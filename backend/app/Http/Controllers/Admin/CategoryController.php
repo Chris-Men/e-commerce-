@@ -42,7 +42,7 @@ class CategoryController extends Controller
             $data['slug'] = Str::slug($request->name);
             Category::create($data);
             return redirect()->route('admin.categories.index')->with([
-                'success' => 'Category has been added successfully'
+                'success' => 'La categoría se ha agregado correctamente.'
             ]);
         }
     }
@@ -78,7 +78,7 @@ class CategoryController extends Controller
             $data['slug'] = Str::slug($request->name);
             $category->update($data);
             return redirect()->route('admin.categories.index')->with([
-                'success' => 'Category has been updated successfully'
+                'success' => 'La categoría se ha actualizado correctamente.'
             ]);
         }
 
@@ -92,7 +92,7 @@ class CategoryController extends Controller
         //
         $category->delete();
         return redirect()->route('admin.categories.index')->with([
-            'success' => 'Category has been deleted successfully'
+            'success' => 'La categoría se ha eliminado correctamente.'
         ]);
     }
 }

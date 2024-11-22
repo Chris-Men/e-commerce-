@@ -12,7 +12,7 @@
                 <div class="col-md-12">
                     <div class="card-header bg-white d-flex justify-content-between align-items-center">
                         <h3 class="mt-2">
-                            Sizes ({{ $sizes->count() }})
+                            Medidas ({{ $sizes->count() }})
                         </h3>
                         <a href="{{route('admin.sizes.create')}}" class="btn btn-sm btn-primary">
                             <i class="fas fa-plus"></i>
@@ -24,7 +24,7 @@
                             <thead>
                                 <tr>
                                     <td>#</td>
-                                    <td>Name</td>
+                                    <td>Nombre</td>
                                     <td></td>
                                 </tr>
                             </thead>

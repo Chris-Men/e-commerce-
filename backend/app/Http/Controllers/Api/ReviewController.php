@@ -28,7 +28,7 @@ class ReviewController extends Controller
                 'rating' => $request->rating
             ]);
             return response()->json(([
-                'message' => 'Your review has been added and will be published soon.'
+                'message' => 'Su reseña ha sido agregada y se publicará pronto.'
             ]));
         }
     }
@@ -50,11 +50,11 @@ class ReviewController extends Controller
                 'approved' => 0
             ]);
             return response()->json(([
-                'message' => 'Your review has been updated and will be published soon.'
+                'message' => 'Su reseña ha sido actualizada y se publicará pronto.'
             ]));
         }else {
             return response()->json(([
-                'error' => 'Something went wrong try again later.'
+                'error' => 'Algo salió mal, inténtalo de nuevo más tarde.'
             ]));
         }
     }
@@ -69,11 +69,11 @@ class ReviewController extends Controller
         if($review) {
             $review->delete();
             return response()->json(([
-                'message' => 'Your review has been deleted successfully.'
+                'message' => 'Tu reseña ha sido eliminada exitosamente.'
             ]));
         }else {
             return response()->json(([
-                'error' => 'Something went wrong try again later.'
+                'error' => 'Algo salió mal, inténtalo de nuevo más tarde.'
             ]));
         }
     }

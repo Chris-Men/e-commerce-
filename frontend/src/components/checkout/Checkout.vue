@@ -112,7 +112,7 @@
         })
         //set the coupon id for each item in the cart
         cartStore.addCouponToCartItem(null)
-        toast.success("Coupon removed",{
+        toast.success("Cupón eliminado",{
             timeout: 2000
         })
     }

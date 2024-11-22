@@ -40,7 +40,7 @@ class CouponController extends Controller
         if($request->validated()) {
             Coupon::create($request->validated());
             return redirect()->route('admin.coupons.index')->with([
-                'success' => 'Coupon has been added successfully'
+                'success' => 'El cupón se ha añadido correctamente.'
             ]);
         }
     }
@@ -74,7 +74,7 @@ class CouponController extends Controller
         if($request->validated()) {
             $coupon->update($request->validated());
             return redirect()->route('admin.coupons.index')->with([
-                'success' => 'Coupon has been updated successfully'
+                'success' => 'El cupón se ha actualizado correctamente.'
             ]);
         }
     }
@@ -87,7 +87,7 @@ class CouponController extends Controller
         //
         $coupon->delete();
         return redirect()->route('admin.coupons.index')->with([
-            'success' => 'Coupon has been deleted successfully'
+            'success' => 'El cupón se ha eliminado correctamente.'
         ]);
     }
 }

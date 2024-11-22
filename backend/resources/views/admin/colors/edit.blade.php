@@ -10,7 +10,7 @@
         <div class="col-md-9">
             <div class="card-header bg-white">
                 <h3 class="mt-2">
-                    Edit color
+                    Editar color
                 </h3>
             </div>
             <hr>
@@ -21,7 +21,7 @@
                             @csrf
                             @method("PUT")
                             <div class="mb-3">
-                                <label for="name" class="form-label">Name*</label>
+                                <label for="name" class="form-label">Nombre*</label>
                                 <input
                                     type="text"
                                     class="form-control @error('name') is-invalid @enderror"
@@ -29,7 +29,7 @@
                                     id="name"
                                     value="{{$color->name,old('name')}}"
                                     aria-describedby="helpId"
-                                    placeholder="Name*"
+                                    placeholder="Nombre*"
                                 />
                                 @error('name')
                                     <span class="invalid-feedback">

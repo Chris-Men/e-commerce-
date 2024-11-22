@@ -2,9 +2,9 @@
     <div class="row">
         <div class="d-flex">
             <div class="mb-3">
-                Found
+               Encontrado
                 <span class="fw-bold">{{ productsStore.products.length }}</span>
-                {{ productsStore.products.length > 1 ? "products" : "product"}}
+                {{ productsStore.products.length > 1 ? "products" : "producto"}}
             </div>
             <div class="ms-1" v-if="productsStore.filter">
                 for <span class="fw-bold">

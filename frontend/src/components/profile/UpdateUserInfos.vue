@@ -3,13 +3,13 @@
         <div class="card shadow-sm">
             <div class="card-header bg-white">
                 <h5 class="text-center my-2">
-                    {{ updatingProfile ? "User Details" : "Billing Details"}}
+                    {{ updatingProfile ? "Detalles del usuario" : "Detalles de facturación"}}
                 </h5>
             </div>
             <div class="card-body">
                 <form class="mt-5" @submit.prevent="updateUserInfos">
                     <div class="mb-3">
-                        <label for="phone_number" class="form-label">Phone Number*</label>
+                        <label for="phone_number" class="form-label">Número de teléfono*</label>
                         <input
                             type="text"
                             class="form-control"
@@ -18,11 +18,11 @@
                             id="phone_number"
                             :required="true"
                             aria-describedby="helpId"
-                            placeholder="Phone Number*"
+                            placeholder="Número de teléfono*"
                         />
                     </div>
                     <div class="mb-3">
-                        <label for="address" class="form-label">Address*</label>
+                        <label for="address" class="form-label">Dirección*</label>
                         <input
                             type="text"
                             class="form-control"
@@ -31,11 +31,11 @@
                             id="address"
                             :required="true"
                             aria-describedby="helpId"
-                            placeholder="Address*"
+                            placeholder="Dirección*"
                         />
                     </div>
                     <div class="mb-3">
-                        <label for="zip_code" class="form-label">Zip Code*</label>
+                        <label for="zip_code" class="form-label">Código postal*</label>
                         <input
                             type="text"
                             class="form-control"
@@ -44,11 +44,11 @@
                             id="zip_code"
                             :required="true"
                             aria-describedby="helpId"
-                            placeholder="Zip Code*"
+                            placeholder="Código postal*"
                         />
                     </div>
                     <div class="mb-3">
-                        <label for="city" class="form-label">City*</label>
+                        <label for="city" class="form-label">Ciudad*</label>
                         <input
                             type="text"
                             class="form-control"
@@ -57,11 +57,11 @@
                             id="city"
                             :required="true"
                             aria-describedby="helpId"
-                            placeholder="City*"
+                            placeholder="Ciudad*"
                         />
                     </div>
                     <div class="mb-3">
-                        <label for="country" class="form-label">Country*</label>
+                        <label for="country" class="form-label">País*</label>
                         <input
                             type="text"
                             class="form-control"
@@ -70,7 +70,7 @@
                             id="country"
                             :required="true"
                             aria-describedby="helpId"
-                            placeholder="Country*"
+                            placeholder="País*"
                         />
                     </div>
                     <div class="mb-3">
@@ -79,7 +79,7 @@
                             type="submit"
                             class="btn btn-sm btn-dark rounded-0"
                         >
-                            Submit
+                            Guardar
                         </button>
                     </div>
                 </form>

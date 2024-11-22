@@ -2,7 +2,7 @@
     <div class="card mb-2">
         <div class="card-header bg-white">
             <h5 class="text-center mt-2">
-                Reviews ({{ productDetailsStore.product.reviews.length }})
+                Reseñas ({{ productDetailsStore.product.reviews.length }})
             </h5>
         </div>
         <div class="card-body">
@@ -26,7 +26,7 @@
                         </p>
                         <div>
                             <small class="text-body-secondary">
-                                By {{ review.user.name }} - <span class="text-danger"> {{ review.created_at }}</span>
+                                Por {{ review.user.name }} - <span class="text-danger"> {{ review.created_at }}</span>
                             </small>
                         </div>
                         <div>
@@ -53,7 +53,7 @@
                     </div>
                 </li>
             </ul>
-            <Alert v-else content="No reviews yet!" bgColor="info" />
+            <Alert v-else content="Aún no hay reseñas!" bgColor="info" />
         </div>
     </div>
 </template>

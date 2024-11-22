@@ -10,7 +10,7 @@
         <div class="col-md-9">
             <div class="card-header bg-white">
                 <h3 class="mt-2">
-                    Add new category
+                    Agregar nueva categoria
                 </h3>
             </div>
             <hr>
@@ -20,7 +20,7 @@
                         <form action="{{route('admin.categories.store')}}" method="post">
                             @csrf
                             <div class="mb-3">
-                                <label for="name" class="form-label">Name*</label>
+                                <label for="name" class="form-label">Nombre*</label>
                                 <input
                                     type="text"
                                     class="form-control @error('name') is-invalid @enderror"
@@ -28,7 +28,7 @@
                                     id="name"
                                     value="{{old('name')}}"
                                     aria-describedby="helpId"
-                                    placeholder="Name*"
+                                    placeholder="Nombre*"
                                 />
                                 @error('name')
                                     <span class="invalid-feedback">
@@ -40,7 +40,7 @@
                                 type="submit"
                                 class="btn btn-sm btn-dark"
                             >
-                                Submit
+                                Guardar
                             </button>
                         </form>
                     </div>

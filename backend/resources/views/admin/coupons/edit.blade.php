@@ -10,7 +10,7 @@
         <div class="col-md-9">
             <div class="card-header bg-white">
                 <h3 class="mt-2">
-                    Edit coupon
+                    Editar cupon
                 </h3>
             </div>
             <hr>
@@ -21,7 +21,7 @@
                             @csrf
                             @method("PUT")
                             <div class="mb-3">
-                                <label for="name" class="form-label">Name*</label>
+                                <label for="name" class="form-label">Nombre*</label>
                                 <input
                                     type="text"
                                     class="form-control @error('name') is-invalid @enderror"
@@ -29,7 +29,7 @@
                                     id="name"
                                     value="{{$coupon->name,old('name')}}"
                                     aria-describedby="helpId"
-                                    placeholder="Name*"
+                                    placeholder="Nombre*"
                                 />
                                 @error('name')
                                     <span class="invalid-feedback">
@@ -38,7 +38,7 @@
                                 @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="discount" class="form-label">Discount*</label>
+                                <label for="discount" class="form-label">Descuento*</label>
                                 <input
                                     type="number"
                                     class="form-control @error('discount') is-invalid @enderror"
@@ -46,7 +46,7 @@
                                     id="discount"
                                     value="{{$coupon->discount,old('discount')}}"
                                     aria-describedby="helpId"
-                                    placeholder="Discount*"
+                                    placeholder="Descuento*"
                                 />
                                 @error('discount')
                                     <span class="invalid-feedback">
@@ -55,7 +55,7 @@
                                 @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="valid_until" class="form-label">Validity*</label>
+                                <label for="valid_until" class="form-label">Validez*</label>
                                 <input
                                     type="datetime-local"
                                     value="{{$coupon->valid_until}}"
@@ -63,7 +63,7 @@
                                     name="valid_until"
                                     id="valid_until"
                                     aria-describedby="helpId"
-                                    placeholder="Validity*"
+                                    placeholder="Validez*"
                                 />
                                 @error('valid_until')
                                     <span class="invalid-feedback">
@@ -75,7 +75,7 @@
                                 type="submit"
                                 class="btn btn-sm btn-dark"
                             >
-                                Submit
+                                Guardar
                             </button>
                         </form>
                     </div>

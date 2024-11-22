@@ -11,7 +11,7 @@
             <div class="row mt-2">
                 <div class="col-md-12">
                     <div class="card-header bg-white">
-                        <h3 class="mt-2">Dashboard</h3>
+                        <h3 class="mt-2">Panel</h3>
                         <hr>
                     </div>
                     <div class="card-body">
@@ -21,7 +21,7 @@
                                     <div class="card-header bg-white">
                                         <div class="d-flex justify-content-between">
                                             <strong class="badge bg-dark">
-                                                Today's Orders
+                                            Pedidos de hoy
                                             </strong>
                                             <span class="badge bg-dark">
                                                 {{ $todayOrders->count() }}
@@ -40,7 +40,7 @@
                                     <div class="card-header bg-white">
                                         <div class="d-flex justify-content-between">
                                             <strong class="badge bg-primary">
-                                                Yesterday's Orders
+                                            Los pedidos de ayer
                                             </strong>
                                             <span class="badge bg-primary">
                                                 {{ $yesterdayOrders->count() }}
@@ -59,7 +59,7 @@
                                     <div class="card-header bg-white">
                                         <div class="d-flex justify-content-between">
                                             <strong class="badge bg-danger">
-                                                This Month Orders
+                                                Pedidos de este mes
                                             </strong>
                                             <span class="badge bg-danger">
                                                 {{ $monthOrders->count() }}
@@ -78,7 +78,7 @@
                                     <div class="card-header bg-white">
                                         <div class="d-flex justify-content-between">
                                             <strong class="badge bg-success">
-                                                This Year Orders
+                                            Pedidos de este año
                                             </strong>
                                             <span class="badge bg-success">
                                                 {{ $yearOrders->count() }}

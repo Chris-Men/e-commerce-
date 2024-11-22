@@ -4,7 +4,7 @@
         <button class="btn btn-dark btn-block"
             @click="fetchPaymentLink"
             >
-            Proceed to payment
+           Proceder al pago
         </button>
     </div>
   </div>

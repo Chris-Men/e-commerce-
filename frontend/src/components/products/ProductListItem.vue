@@ -21,10 +21,10 @@
                 </div>
                 <div class="my-2">
                     <span class="badge bg-success" v-if="product.status">
-                        In Stock
+                        Disponible
                     </span>
                     <span class="badge bg-warning" v-else>
-                        Out Stock
+                        Agotado
                     </span>
                 </div>
                 <div v-if="product.reviews.length > 0">
@@ -42,7 +42,7 @@
             </div>
             <div class="card-footer d-flex justify-content-between bg-light">
                 <router-link :to="`/product/${product.slug}`" class="btn btn-danger btn-sm">
-                   <i class="bi bi-cart-plus"></i> Add to Cart
+                   <i class="bi bi-cart-plus"></i> Agregar al carrito
                 </router-link>
                 <button class="btn btn-outline-danger btn-sm"
                     @click="favoritesStore.addToFavorites(product)"

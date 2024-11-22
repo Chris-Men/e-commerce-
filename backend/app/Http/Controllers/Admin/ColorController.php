@@ -39,7 +39,7 @@ class ColorController extends Controller
         if($request->validated()) {
             Color::create($request->validated());
             return redirect()->route('admin.colors.index')->with([
-                'success' => 'Color has been added successfully'
+                'success' => 'El color se ha añadido correctamente.'
             ]);
         }
     }
@@ -73,7 +73,7 @@ class ColorController extends Controller
         if($request->validated()) {
             $color->update($request->validated());
             return redirect()->route('admin.colors.index')->with([
-                'success' => 'Color has been updated successfully'
+                'success' => 'El color se ha actualizado correctamente.'
             ]);
         }
     }
@@ -86,7 +86,7 @@ class ColorController extends Controller
         //
         $color->delete();
         return redirect()->route('admin.colors.index')->with([
-            'success' => 'Color has been deleted successfully'
+            'success' => 'El color se ha eliminado correctamente.'
         ]);
     }
 }

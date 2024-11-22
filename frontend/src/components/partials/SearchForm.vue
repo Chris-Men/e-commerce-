@@ -3,7 +3,7 @@
         <input type="text" 
             v-model="data.term" 
             class="form-control rounded-0"
-            placeholder="Search..."    
+            placeholder="Buscar..."    
         >
         <button class="btn btn-sm btn-dark search__button"
             @click="searchForProducts"

@@ -12,7 +12,7 @@
                 <div class="col-md-12">
                     <div class="card-header bg-white d-flex justify-content-between align-items-center">
                         <h3 class="mt-2">
-                            Coupons ({{ $coupons->count() }})
+                            Cupones ({{ $coupons->count() }})
                         </h3>
                         <a href="{{route('admin.coupons.create')}}" class="btn btn-sm btn-primary">
                             <i class="fas fa-plus"></i>
@@ -24,9 +24,9 @@
                             <thead>
                                 <tr>
                                     <td>#</td>
-                                    <td>Name</td>
-                                    <td>Discount</td>
-                                    <td>Validity</td>
+                                    <td>Nombre</td>
+                                    <td>Descuento</td>
+                                    <td>Validez</td>
                                     <td></td>
                                 </tr>
                             </thead>
@@ -39,7 +39,7 @@
                                         <td>
                                             @if ($coupon->checkIfValid())
                                                 <span class="bg-success border border-dark p-1 text-white">
-                                                    Valid until {{ \Carbon\Carbon::parse($coupon->valid_until)->diffForHumans()}}
+                                                    Válido hasta {{ \Carbon\Carbon::parse($coupon->valid_until)->diffForHumans()}}
                                                 </span>
                                             @else
                                                 <span class="bg-danger border border-dark p-1 text-white">

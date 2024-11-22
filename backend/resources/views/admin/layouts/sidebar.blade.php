@@ -40,7 +40,7 @@
                     <a class="nav-link d-flex align-items-center gap-2 @if (request()->routeIs('admin.sizes.index')) text-dark @endif"
                         aria-current="page" href="{{ route('admin.sizes.index') }}">
                         <i class="fa-solid fa-expand"></i>
-                        Tallas
+                       Medidas
                     </a>
                 </li>
                 <li class="nav-item">

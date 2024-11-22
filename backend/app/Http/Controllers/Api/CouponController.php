@@ -16,12 +16,12 @@ class CouponController extends Controller
         $coupon = Coupon::whereName($request->name)->first();
         if($coupon && $coupon->checkIfValid()) {
             return response()->json([
-                'message' => 'Coupon applied successfully',
+                'message' => 'Cupón aplicado exitosamente',
                 'coupon' => $coupon
             ]);
         }else {
             return response()->json([
-                'error' => 'Invalid or expired coupon'
+                'error' => 'Cupón no válido o caducado'
             ]);
         }
     }

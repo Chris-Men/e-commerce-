@@ -4,13 +4,13 @@
             <div class="d-flex">
                 <input type="text" 
                     v-model="data.coupon.name"
-                    placeholder="Enter a code promo"
+                    placeholder="Introduce un código de cupon"
                     class="form-control rounded-0">
                 <button class="btn btn-primary rounded-0"
                     @click="applyCoupon"
                     :disabled="!data.coupon.name"
                 >
-                    Apply
+                    Aplicar
                 </button>
             </div>
         </div>

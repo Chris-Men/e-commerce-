@@ -10,7 +10,7 @@
         <div class="col-md-9">
             <div class="card-header bg-white">
                 <h3 class="mt-2">
-                    Add new size
+                    Agregar nueva medida
                 </h3>
             </div>
             <hr>
@@ -28,7 +28,7 @@
                                     id="name"
                                     value="{{old('name')}}"
                                     aria-describedby="helpId"
-                                    placeholder="Name*"
+                                    placeholder="Nombre*"
                                 />
                                 @error('name')
                                     <span class="invalid-feedback">
@@ -40,7 +40,7 @@
                                 type="submit"
                                 class="btn btn-sm btn-dark"
                             >
-                                Submit
+                                Guardar
                             </button>
                         </form>
                     </div>

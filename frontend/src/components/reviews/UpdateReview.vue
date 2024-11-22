@@ -2,8 +2,8 @@
     <div class="card mb-2">
         <Spinner :store="productDetailsStore" />
         <div class="card-header bg-white">
-            <h5 class="text-center mt-2">
-                Edit your review
+            <h5 class="text-center mt-2">             
+Edita tu reseña
             </h5>
         </div>
         <div class="card-body">
@@ -22,7 +22,7 @@
                     />
                 </div>
                 <div class="mb-3">
-                    <label for="body" class="form-label">Review*</label>
+                    <label for="body" class="form-label">Reseña*</label>
                     <textarea class="form-control" 
                         :required="true"
                         v-model="data.review.body"
@@ -40,14 +40,14 @@
                         class="btn btn-dark btn-sm"
                         :disabled="data.review.rating === 0"
                     >
-                        Update
+                        Actualizar
                     </button>
                     <button
                         type="button"
                         class="btn btn-danger mx-2 btn-sm"
                         @click="productDetailsStore.cancelUpdating"
                     >
-                        Cancel
+                        Cancelar
                     </button>
                 </div>
             </form>

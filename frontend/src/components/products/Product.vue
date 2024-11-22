@@ -84,10 +84,10 @@
                 </div>
                 <div>
                     <span class="badge bg-success" v-if="productDetailsStore.product?.status">
-                        In Stock
+                        Disponible
                     </span>
                     <span class="badge bg-warning" v-else>
-                        Out Stock
+                        Agotado
                     </span>
                 </div>
                 <div class="my-3 d-inline-flex">
@@ -116,7 +116,7 @@
                                 coupon_id: null,
                             })"
                             >
-                            <i class="bi bi-cart-plus"></i> Add to cart
+                            <i class="bi bi-cart-plus"></i> Agregar al carrito
                         </button>
                     </div>
                 </div>

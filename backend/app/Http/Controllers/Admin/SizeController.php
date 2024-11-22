@@ -39,7 +39,7 @@ class SizeController extends Controller
         if($request->validated()) {
             Size::create($request->validated());
             return redirect()->route('admin.sizes.index')->with([
-                'success' => 'Size has been added successfully'
+                'success' => 'Medida se ha añadido correctamente.'
             ]);
         }
     }
@@ -73,7 +73,7 @@ class SizeController extends Controller
         if($request->validated()) {
             $size->update($request->validated());
             return redirect()->route('admin.sizes.index')->with([
-                'success' => 'Size has been updated successfully'
+                'success' => 'La medida se ha actualizado correctamente.'
             ]);
         }
     }
@@ -86,7 +86,7 @@ class SizeController extends Controller
         //
         $size->delete();
         return redirect()->route('admin.sizes.index')->with([
-            'success' => 'Size has been deleted successfully'
+            'success' => 'La medida se ha eliminado correctamente.'
         ]);
     }
 }

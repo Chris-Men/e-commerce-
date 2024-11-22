@@ -42,7 +42,7 @@ class BrandController extends Controller
             $data['slug'] = Str::slug($request->name);
             Brand::create($data);
             return redirect()->route('admin.brands.index')->with([
-                'success' => 'Brand has been added successfully'
+                'success' => 'La marca se ha añadido correctamente.'
             ]);
         }
     }
@@ -78,7 +78,7 @@ class BrandController extends Controller
             $data['slug'] = Str::slug($request->name);
             $brand->update($data);
             return redirect()->route('admin.brands.index')->with([
-                'success' => 'Brand has been updated successfully'
+                'success' => 'La marca se ha actualizado correctamente.'
             ]);
         }
     }
@@ -91,7 +91,7 @@ class BrandController extends Controller
         //
         $brand->delete();
         return redirect()->route('admin.brands.index')->with([
-            'success' => 'Brand has been deleted successfully'
+            'success' => 'La marca se ha eliminado correctamente.'
         ]);
     }
 }

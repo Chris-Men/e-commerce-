@@ -41,7 +41,7 @@
                     </tbody>
                 </table>
             </div>
-            <Alert v-else bgColor="info" content="Your favorites list is empty !" />
+            <Alert v-else bgColor="info" content="Tu lista de favoritos está vacía!" />
         </div>
     </div>
   </div>

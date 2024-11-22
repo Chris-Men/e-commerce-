@@ -7,12 +7,12 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Product Name</th>
-                            <th>Product Price</th>
-                            <th>Qty</th>
+                            <th>Nombre del producto</th>
+                            <th>Precio del producto</th>
+                            <th>Cantidad</th>
                             <th>Total</th>
-                            <th>Order Date</th>
-                            <th>Delivered at</th>
+                            <th>Fecha del pedido</th>
+                            <th>Entregado en</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -4,7 +4,7 @@
             <div class="card">
                 <div class="card-body p-5">
                     <h4 class="text-center">
-                        Payment is done successfully
+                        El pago se realiza con éxito
                     </h4>
                 </div>
             </div>

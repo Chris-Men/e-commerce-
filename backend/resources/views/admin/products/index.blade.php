@@ -12,7 +12,7 @@
                 <div class="col-md-12">
                     <div class="card-header bg-white d-flex justify-content-between align-items-center">
                         <h3 class="mt-2">
-                            Products ({{ $products->count() }})
+                            Productos ({{ $products->count() }})
                         </h3>
                         <a href="{{route('admin.products.create')}}" class="btn btn-sm btn-primary">
                             <i class="fas fa-plus"></i>
@@ -24,16 +24,16 @@
                             <thead>
                                 <tr>
                                     <td>#</td>
-                                    <td>Name</td>
+                                    <td>Nombre</td>
                                     <td>Slug</td>
-                                    <td>Category</td>
-                                    <td>Brand</td>
-                                    <td>Colors</td>
-                                    <td>Sizes</td>
-                                    <td>Qty</td>
-                                    <td>Price</td>
-                                    <td>Images</td>
-                                    <td>Status</td>
+                                    <td>Categoria</td>
+                                    <td>Marca</td>
+                                    <td>Colores</td>
+                                    <td>Medidas</td>
+                                    <td>Cantidad</td>
+                                    <td>Precio</td>
+                                    <td>Imagenes</td>
+                                    <td>Estado</td>
                                     <td></td>
                                 </tr>
                             </thead>
@@ -96,11 +96,11 @@
                                         <td>
                                             @if ($product->status)
                                                 <span class="badge bg-success p-2">
-                                                    In Stock
+                                                    Disponible
                                                 </span>
                                             @else 
                                                 <span class="badge bg-danger p-2">
-                                                    Out of Stock
+                                                    No disponible
                                                 </span>
                                             @endif
                                         </td>
